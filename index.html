@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talan Oates - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <script>
+    (function () {
+      const darkmode = localStorage.getItem('darkmode');
+      if (darkmode === 'enabled') {
+        document.documentElement.classList.add('darkmode');
+      }
+      else {
+        document.documentElement.classList.add('lightmode');
+      }
+
+    })();
+  </script>
+  <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body class="">
+  <div id="background">
+
+  </div>
+  <div id="foreground">
+    <nav class="centred">
+      <a id="nav-logo" href="index.html">
+        <img data-dark-src="assets/logoWhite.svg" data-light-src="assets/logo.svg" class="theme-image" alt="Logo" />
+      </a>
+
+      <ul id="nav-links">
+        <li class="nav-link">
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+        <li class="nav-link"><a href="#">CV</a></li>
+        <li class="nav-link"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section class="centred" id="hero">
+      <div id="hero-main">
+        <div id="hero-title">
+          <h1 class="gradient-text-secondary">WEB & MOBILE</h1>
+          <h1 class="gradient-text-primary">FULL STACK</h1>
+          <h1 class="gradient-text-primary">DEVELOPMENT</h1>
+        </div>
+
+        <div class="big-logo logo-animation">
+          <img data-dark-src="assets/animations/darkmode/logoFrame2.svg"
+            data-light-src="assets/animations/lightmode/logoFrame2.svg" class="theme-image" alt="Frame 2" />
+          <img data-dark-src="assets/animations/darkmode/logoFrame3.svg"
+            data-light-src="assets/animations/lightmode/logoFrame3.svg" class="theme-image" alt="Frame 3" />
+        </div>
+
+      </div>
+      <div id="hero-sub">
+        <div id="hero-socials">
+          <img data-dark-src="assets/linkedinWhite.png" data-light-src="assets/linkedin.png" class="theme-image" />
+          <img data-dark-src="assets/githubWhite.png" data-light-src="assets/github.png" class="theme-image" />
+        </div>
+
+        <h3>
+          Hi, Talan here - I build full stack websites and apps with a focus delivering memorable, impactful projects.
+          Check out my work on <a>GitHub</a>.
+        </h3>
+        <div>
+          <button class="gradient-button">Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="centred">
+      <h2 class="projects-title gradient-text-primary">Case Studies</h2>
+      <div id="projects-container">
+        <div class="project-tile" aria-label="Clara app tile">
+          <div class="image-tile clara-img left-tile">
+            <img src="assets/claraScreens1.png">
+          </div>
+          <div class="info-tile right-tile" id="clara-info-tile">
+            <div class="top-row">
+              <div class="info-bubble">
+                <h4> React Native | Mobile (iOS and Android)</h4>
+              </div>
+              <a>
+                <img class="small-icon theme-image" data-dark-src="assets/githubWhite.png"
+                  data-light-src="assets/github.png" alt="github logo" />
+              </a>
+            </div>
+            <div class="info-hero">
+              <h2 class="projects-title">Clara</h2>
+              <h3 class="projects-subtitle">Cross-platform Mental Health Intervention</h3>
+            </div>
+            <div class="info-description">
+              <p>This project addresses the rising need for accessible mental health support.
+                Using language models to detect user patterns, it suggests areas of concern in
+                combination with map features to show how locations may affect mood.</p>
+              <p>Designed to complement therapy, the project helps users focus on key
+                areas and avoid common pitfalls, bringing clarity and support in an
+                increasingly busy world.</p>
+            </div>
+            <a class="default-button" id="clara-transition-trigger">View More</a>
+          </div>
+        </div>
+
+        <div class="project-tile" aria-label="Clara app tile">
+          <div class="info-tile left-tile" id="ontrack-info-tile">
+            <div class="top-row">
+              <div class="info-bubble">
+                <h4>React Website | Web, Mobile & Admin Dashboard</h4>
+              </div>
+              <a>
+                <img class="small-icon theme-image" data-dark-src="assets/githubWhite.png"
+                  data-light-src="assets/github.png" alt="github logo" />
+              </a>
+
+            </div>
+            <div class="info-hero">
+              <h2 class="projects-title">OnTrack</h2>
+              <h3 class="projects-subtitle">Intuitive Fitness Tracking</h3>
+            </div>
+            <div class="info-description">
+              <p>This functional proof of concept empowers users to reach their fitness goals
+                through recording food, weight and fitness goals. Breaking down this data
+                using intuitive visualisations.</p>
+              <p>With more than enough fitness apps available this project aims to target
+                users using Desktop, or mobile and reaches a wider audience regardless of
+                device capabilities. </p>
+            </div>
+            <a class="default-button" id="ontrack-transition-trigger">View More</a>
+          </div>
+          <div class="image-tile ontrack-img right-tile">
+            <img src="assets/ontrackScreens1.png">
+          </div>
+        </div>
+
+        <div class="project-tile" aria-label="Clara app tile">
+          <div class="image-tile chrome-img left-tile">
+            <img data-dark-src="assets/logoWhite.svg" data-light-src="assets/logo.svg" class="theme-image"
+              alt="temporary logo" />
+          </div>
+          <div class="info-tile right-tile" id="chrome-info-tile">
+            <div class="top-row">
+              <div class="info-bubble">
+                <h4>Unity Game | MacOS and Windows</h4>
+              </div>
+            </div>
+            <div class="info-hero">
+              <h2 class="projects-title">Chrome Heart</h2>
+              <h3 class="projects-subtitle">Immersive Role Playing Game (Coming soon)</h3>
+            </div>
+            <div class="info-description">
+              <p>Set against a dark, gritty backdrop where humans unknowingly coexist with
+                machines, this game delves into complex themes of identity and belonging.
+              </p>
+              <p>Developed to showcase my versatility as a developer, this project reflects my
+                commitment to exploring complex topics through a unique and immersive
+                perspective.</p>
+            </div>
+            <a class="default-button" id="chrome-transition-trigger">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-summary" class="centred">
+      <h3>Hi, I’m Talan Oates. With a degree in Computer Science and industry experience developing websites,
+        apps, and bespoke systems, I am dedicated to delivering solutions that are:</h3>
+      <div id="homepage-values" class="gradient-text-primary">
+        <h2>Innovative</h2>
+        <h2>Robust</h2>
+        <h2>User Focused</h2>
+        <h2>Scalable</h2>
+      </div>
+      <h3>I’ve been immersed in the world of computers for over a decade starting with building
+        my first PC and now progressing to developing a mental health app that I’m truly proud of.
+        Throughout my journey, I’ve been committed to continually refining my skills and staying
+        on the cutting edge of technology.</h3>
+
+    </section>
+
+    <section id="contact" class="centred">
+
+      <div class="big-logo logo-animation">
+        <img data-dark-src="assets/animations/darkmode/logoFrame2.svg"
+          data-light-src="assets/animations/lightmode/logoFrame2.svg" class="theme-image" alt="Frame 2" />
+        <img data-dark-src="assets/animations/darkmode/logoFrame3.svg"
+          data-light-src="assets/animations/lightmode/logoFrame3.svg" class="theme-image" alt="Frame 3" />
+      </div>
+
+
+      <div id="contact-text">
+        <h1 class="gradient-text-primary">Have an idea or just want to
+          get in touch,
+          Let’s work together!
+        </h1>
+        <div id="contact-details">
+          <div class="contact">
+            <h3 class="primary-text">Email Contact:</h3>
+            <h3 class="gradient-text-secondary">my email here...</h3>
+          </div>
+          <div class="contact">
+            <h3 class="primary-text">LinkedIn:</h3>
+            <h3 class="gradient-text-secondary">talan-oates</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

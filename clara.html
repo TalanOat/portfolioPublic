@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talan Oates - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="clara.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const darkmode = localStorage.getItem('darkmode');
+      if (darkmode === 'enabled') {
+        document.documentElement.classList.add('darkmode');
+      }
+      else {
+        document.documentElement.classList.add('lightmode');
+      }
+
+    })();
+  </script>
+  <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body>
+  <div id="background"></div>
+  <div id="foreground">
+    <nav class="centred">
+      <a id="nav-logo" href="index.html">
+        <img src="assets/logo.svg" class="lightmode-display" />
+        <img src="assets/logoWhite.svg" class="darkmode-display" />
+      </a>
+      <ul id="nav-links">
+        <li class="nav-link">
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+        <li class="nav-link"><a href="#">CV</a></li>
+        <li class="nav-link"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section class="centred" id="project-hero">
+      <h1 class="projects-title cascade-tile gradient-text-secondary">Clara</h1>
+      <div id="projects-contents" class="cascade-tile">
+        <a class="project-link active">Showcase</a>
+        <a class="project-link" href="#roles">My Roles</a>
+        <a class="project-link" href="#goals">Project Goals</a>
+        <a class="project-link" href="#summary">Summary</a>
+        <a class="project-link" href="#takeaways">What I Took Away</a>
+        <a class="project-link" href="#added">What Could be added</a>
+      </div>
+      <div class="image-collage cascade-tile">
+        <div class="image-row">
+          <div class="image-tile left-tile">
+            <img src="assets/claraScreens3.png">
+          </div>
+          <div class="info-tile right-tile">
+            <h2><span>1 in 4</span> people in the UK are affected by mental illness and similar trends can be seen
+              globally</h2>
+          </div>
+        </div>
+        <div class="image-row">
+          <div class="info-tile right-tile">
+            <h2><span>1 in 4</span> people in the UK are affected by mental illness and similar trends can be seen
+              globally</h2>
+          </div>
+          <div class="image-tile left-tile">
+            <img src="assets/claraScreens2.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="centred" id="project-description">
+      <div class="text-element">
+      </div>
+      <div id="project-summary">
+        <div class="description-container" id="roles">
+          <h2 class="description-heading">My Roles</h2>
+          <div class="headings-description gradient-text-primary">
+            <h3 class=""">Project Manager</h3>
+            <h3 class="">UX/UI Designer</h3>
+            <h3 class="">Full Stack Crossplatform Developer</h3>
+            <h3 class="">Mental Health Advocate and Researcher</h3>
+            <h3 class="">Frontend Developer</h3>
+          </div>
+        </div>
+
+        <div class="description-container" id="goals">
+          <h2 class="description-heading">Project Goals</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Primary Goal</h3>
+            <p>The first primary objective is to empower users from diverse backgrounds to
+              manage their emotions through evidence-based mindfulness practices.</p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Secondary Goal</h3>
+            <p>The second primary objective is focused on growing the user’s
+              emotional intelligence (EQ).</p>
+          </div>
+        </div>
+
+        <div class="description-container" id="summary">
+          <div class="text-description">
+            <h2 class="description-heading">Summary</h2>
+            <div class="text-container">
+              <p>
+                This project, grounded in over six months of mental health research, supports individuals facing mental
+                health
+                challenges while helping general users better understand their emotions. It provides an accessible,
+                low-cost alternative to complex, expensive apps with weak privacy protections.
+                User data remains securely on the device, with minimal and optional use of third-party services.
+                By combining language models with visualizations, it identifies meaningful patterns such as emotional
+                triggers and highlights the connection between environment and well-being through mapping features.
+                Its robust design allows for seamless integration of additional features in future updates.</p>
+              <p>
+              </p>
+              <p>This app is designed to work alongside exisiting therapy through providing a historic
+                log of emotional patterns and triggers. It is not a replacement for therapy or medication.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="description-image">
+          <div class="image-tile">
+            <img src="assets/claraScreens2.png">
+          </div>
+        </div>
+
+        <div class="description-container" id="takeaways">
+          <h2 class="description-heading">What I Took Away</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Technology as a Positive</h3>
+            <p>
+              Recent headlines underscore the growing need for accessible mental health support while also revealing
+              the downsides of technology use. This highlights the importance of developers demonstrating
+              the positive impact technology.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Design Simplicity</h3>
+            <p>Limited screen size and resources drove me to create an accessible interface optimised for battery
+              life and user experience. Every button was purposefully included, with each iteration refining and
+              streamlining the design. By leveraging native components, I ensured the app was intuitive for users
+              already familiar with their respective platforms.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Robust Planning</h3>
+            <p>This was one of my most extensive projects, requiring me to dive into unfamiliar technology and quickly
+              learn its intricacies.
+              It provided valuable experience in planning, time management, and adapting to new challenges. I
+              successfully
+              achieved over 95% of the project goals on time and at a quality level that met my high standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="description-container" id="added">
+          <h2 class="description-heading">What Could be added</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Text Journal Scanning</h3>
+            <p>
+              Some users may prefer scanning handwritten journals to integrate them with app features like pattern
+              recognition and mapping.
+              Physical journaling has unique benefits, but analyzing patterns can be difficult. By providing a digital
+              backup, the app
+              ensures entries are accessible anytime, and users can enhance privacy by discarding the physical journal
+              after scanning.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Social Connectivity</h3>
+            <p>
+              The app could include a social connectivity feature, enabling users to connect anonymously and share
+              journal prompts,
+              benefiting the entire community.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">More Analysis Models</h3>
+            <p>
+              Enhanced analysis models could better support users on their mental health journey. These models could
+              evolve
+              with user feedback to address specific needs, such as detecting patterns of self-criticism or predicting
+              periods
+              of low mood by linking words to historical data. For example, if low mood follows mentions of family, the
+              app might
+              suggest a hidden personal issue for users to explore in therapy, offering valuable insights.
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</body>
+
+</html>

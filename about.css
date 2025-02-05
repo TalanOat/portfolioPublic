@@ -1,0 +1,133 @@
+
+
+/* hero styling */
+
+#hero-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 7rem 0;
+}
+
+#hero-title h1 {
+    font-size: 9.6rem;
+    color: transparent;
+}
+
+.medium-logo img {
+    width: 14rem;
+}
+
+#hero-sub h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+/* about tiles styling */
+
+#about-tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* testing stlyes for cascade effects */
+
+.about-tile {
+    display: flex;
+    padding: 3rem 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid var(--primary-border); */
+    /* background: linear-gradient(163deg, rgba(255, 88, 88, 0.05), rgb(130, 140, 255, 0.09)); */
+    background: linear-gradient(163deg, var(--accent-first-15), var(--accent-third-19));
+    backdrop-filter: blur(2rem);
+    border-radius: 3rem;
+    transition: gap 999s ease-in-out;
+    gap: 0rem;
+}
+
+.darkmode .about-tile {
+    background: linear-gradient(163deg, var(--grey-5), var(--accent-second-5));
+}
+
+.about-tile.active {
+    gap: 2.5rem;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-row h2 {
+    font-size: 3rem;
+}
+
+.main-row {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-row.active {
+    max-height: 50rem;
+}
+
+.main-row p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.value-container h3 {
+    font-size: 2.4rem;
+}
+
+
+
+/* styling for the toggle button and animation */
+
+.toggle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle::before,
+.toggle::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle::before {
+    width: 32px;
+    height: 6px;
+}
+
+.toggle::after {
+    width: 6px;
+    height: 32px;
+}
+
+.toggle.active::before {
+    transform: rotate(-180deg);
+}
+
+.toggle.active::after {
+    opacity: 0;
+}

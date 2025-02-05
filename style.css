@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors  */
+
+:root {
+    --off-white: #E9E9E9;
+    --primary: #264653;
+    --primary-faded: rgba(38, 70, 83, 0.075);
+    --secondary: #315a6b;
+    --alt-gradient-accent: #4a839b;
+    --grey: #737373;
+    --dark-grey: #414141;
+    --accent-first: #E9C46A;
+    --accent-second: #d8dbbd;
+    --accent-third: #D8D9CE;
+    --accent-first-60: rgba(233, 196, 106, 0.6);
+    --accent-first-15: rgba(233, 196, 106, 0.15);
+    --accent-second-40: rgba(216, 219, 189, 0.4);
+    --accent-second-10: rgba(216, 219, 189, 0.1);
+    --accent-third-30: rgba(216, 217, 206, 0.3);
+    --accent-third-19: rgba(216, 217, 206, 0.19);
+    --grey-30: rgba(115, 115, 115, 0.3);
+}
+
+.darkmode {
+    --primary: #DADADA;
+    --primary-faded: rgba(218, 218, 218, 0.050);
+    --secondary: #C8C5C5;
+    --background: #16161A;
+    --alt-gradient-accent: #9baaed;
+    --accent-first: #F72585;
+    --accent-second: #828CFF;
+    --accent-third: #828CFF;
+    --accent-first-60: rgba(247, 37, 133, 0.6);
+    --accent-first-15: rgba(255, 88, 88, 0.15);
+    --accent-second-40: rgba(130, 140, 255, 0.4);
+    --accent-second-10: rgba(130, 140, 255, 0.1);
+    --accent-second-5: rgba(130, 140, 255, 0.05);
+
+    --accent-third-30: rgba(115, 115, 115, 0.1);
+    --accent-third-19: rgba(130, 140, 255, 0.19);
+    --grey-10: rgba(115, 115, 115, 0.1);
+    --grey-5: rgba(115, 115, 115, 0.05);
+}
+
+/* .darkmode {
+    --primary: #DADADA;
+    --primary-faded: rgba(218, 218, 218, 0.050);
+    --secondary: #C8C5C5;
+    --background: #16161A;
+    --alt-gradient-accent: #9baaed;
+    --accent-first: rgb(255, 88, 88);
+    --accent-second: rgb(130, 140, 255);
+    --accent-third: #828CFF;
+    --accent-first-60: rgba(255, 88, 88, 0.6);
+    --accent-first-15: rgba(255, 88, 88, 0.15);
+    --accent-second-40: rgba(130, 140, 255, 0.4);
+    --accent-second-10: rgba(130, 140, 255, 0.1);
+    --accent-second-5: rgba(130, 140, 255, 0.05);
+    --accent-third-30: rgba(115, 115, 115, 0.1);
+    --accent-third-19: rgba(130, 140, 255, 0.19);
+    --grey-10: rgba(115, 115, 115, 0.1);
+    --grey-5: rgba(115, 115, 115, 0.05);
+} */
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html.darkmode {
+    background-color: var(--background);
+}
+html.lightmode { 
+    background-color: var(--off-white);
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.lightmode body {
+    background-color: var(--off-white);
+}
+
+.darkmode body {
+    background-color: var(--background);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: normal;
+    color: var(--primary);
+}
+
+.centred {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* reusable animations */
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* other styling */
+
+.gradient-text-primary {
+    background-image: linear-gradient(90deg, var(--primary), var(--alt-gradient-accent));
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+.darkmode .gradient-text-primary {
+    background-image: linear-gradient(90deg, var(--alt-gradient-accent), var(--primary));
+}
+
+/* .gradient-text-secondary {
+    background-image: linear-gradient(90deg, rgb(255, 88, 88), rgb(130, 140, 255));
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+} */
+
+.gradient-text-secondary {
+    background-image: linear-gradient(90deg, rgb(255, 88, 88), rgb(130, 140, 255));
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+.darkmode .gradient-text-secondary {
+    background-image: linear-gradient(90deg, #F72585, #4361EE);
+}
+
+.gradient-text-noir {
+    background-image: linear-gradient(90deg, #F72585, #4361EE);
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+/* background styling */
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(5rem);
+    opacity: 0.3;
+    z-index: 0;
+    background-image: url('complete2.svg');
+    background-position: 0 -12rem;
+    background-repeat: repeat-x;
+    background-size: auto;
+    animation: scroll-background 130s linear infinite;
+}
+.darkmode #background {
+    background-image: url('completeNoir.svg');
+    filter: saturate(3500%) blur(5rem);
+    opacity: 0.1;
+}
+
+@keyframes scroll-background {
+    0% {
+        background-position: 0 -12rem;
+    }
+
+    100% {
+        background-position: 223% -12rem;
+    }
+}
+
+#foreground {
+    position: relative;
+    z-index: 1;
+}
+
+/* nav bar styling */
+
+nav {
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-between;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+#nav-logo img {
+    height: auto;
+    width: 7rem;
+}
+
+#nav-links {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+}
+
+.nav-link a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+#theme-switch {
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.darkmode #theme-switch {
+    background-color: var(--grey-30);
+}
+#theme-switch svg{
+    fill: var(--primary)
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+
+.lightmode-display {
+    display: none;
+}
+.darkmode-display {
+    display: none;
+}
+.lightmode .lightmode-display {
+    display: block;
+}
+.darkmode .darkmode-display {
+    display: block;
+}
+
+/* reusable cascade animation */
+
+.cascade-tile {
+    opacity: 0;
+    animation: cascade 0.5s ease forwards;
+}
+.cascade-tile:nth-child(1) {
+    animation-delay: 0s;
+}
+.cascade-tile:nth-child(2) {
+    animation-delay: 0.25s;
+}
+.cascade-tile:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.cascade-tile:nth-child(4) {
+    animation-delay: 0.75s;
+}
+/* .cascade-tile:nth-child(5) {
+    animation-delay: 1s;
+} */
+
+/* cascade animation */
+@keyframes cascade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

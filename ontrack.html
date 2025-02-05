@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talan Oates - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ontrack.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const darkmode = localStorage.getItem('darkmode');
+      if (darkmode === 'enabled') {
+        document.documentElement.classList.add('darkmode');
+      }
+      else {
+        document.documentElement.classList.add('lightmode');
+      }
+
+    })();
+  </script>
+  <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body>
+  <div id="background"></div>
+  <div id="foreground">
+    <nav class="centred">
+      <a id="nav-logo" href="index.html">
+        <img src="assets/logo.svg" class="lightmode-display" />
+        <img src="assets/logoWhite.svg" class="darkmode-display" />
+      </a>
+      <ul id="nav-links">
+        <li class="nav-link">
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+        <li class="nav-link"><a href="#">CV</a></li>
+        <li class="nav-link"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section class="centred" id="project-hero">
+      <h1 class="projects-title cascade-tile gradient-text-secondary">OnTrack</h1>
+      <div id="projects-contents" class="cascade-tile">
+        <a class="project-link active">Showcase</a>
+        <a class="project-link" href="#roles">My Roles</a>
+        <a class="project-link" href="#goals">Project Goals</a>
+        <a class="project-link" href="#summary">Summary</a>
+        <a class="project-link" href="#takeaways">What I Took Away</a>
+        <a class="project-link" href="#added">What Could be added</a>
+      </div>
+      <div class="image-collage cascade-tile">
+        <div class="image-row-full">
+          <div class="image-tile left-tile">
+            <img src="assets/ontrackScreens5.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="centred cascade-tile" id="project-description">
+      <div class="text-element">
+      </div>
+      <div id="project-summary">
+        <div class="description-container" id="roles">
+          <h2 class="description-heading">My Roles</h2>
+          <div class="headings-description gradient-text-primary">
+            <h3 class="">Team Member</h3>
+            <h3 class="">UX/UI Designer</h3>
+            <h3 class="">Full Stack React Developer</h3>
+            <h3 class="">Researcher</h3>
+          </div>
+        </div>
+
+        <div class="description-container" id="goals">
+          <h2 class="description-heading">Project Goals</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Primary Goal</h3>
+            <p>The main objective of the project was to equip users with tools to track their fitness goals and
+              nutritional information,
+              enabling them to make more informed decisions.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Secondary Goal</h3>
+            <p>The other objective was to provide web-based platform to reach the widest audience, ensuring
+              accessibility from any device,
+              regardless of its capabilities or updates. This feature sets the project apart from many alternatives,
+              allowing users to input information
+              seamlessly from both mobile devices and desktop computers, or any device with browser support.
+            </p>
+          </div>
+        </div>
+
+        <div class="description-container" id="summary">
+          <div class="text-description">
+            <h2 class="description-heading">Summary</h2>
+            <div class="text-container">
+              <p>
+                Initially a team collaboration, this project evolved into a solo effort to create a fitness and diet
+                tracking website.
+                The platform helps users track fitness goals, analyse nutritional data, and visualise progress with
+                achievements and milestones.
+                It aims to deliver evidence based data and targets to allow users to become healthier and stay on track
+                to their fitness goals.
+              </p>
+              <p>
+                Starting as a backend developer, I later took over the project to modernise its design and enhance user
+                experience with my UX design skills.
+                I rebuilt the dashboard from scratch using React.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="image-row-full">
+          <div class="image-tile left-tile">
+            <img src="assets/ontrackScreens5.png">
+          </div>
+        </div>
+
+
+        <div class="description-container" id="takeaways">
+          <h2 class="description-heading">What I Took Away</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Teamwork</h3>
+            <p>
+              Working with a team was a crucial aspect of this project, as it required us to work collaboratively
+              to complete objectives and deliver a high-quality product. This experience reinforced my ability
+              to communicate effectively with others and collaborate effectively in a team setting.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Mobile and Desktop</h3>
+            <p>I further developed my skills in translating complex designs into user-friendly, accessible websites
+              optimised for both mobile and desktop. My approach focused on preserving familiar functionality to
+              ensure ease of use for the end user.
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">RESTful API Design</h3>
+            <p>To enable dashboard functionality, I developed a RESTful API to bridge the frontend and backend.
+              I implemented a Firebase-powered database for scalable, cost-effective storage of user data and
+              information.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="description-container" id="added">
+          <h2 class="description-heading">What Could be added</h2>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Intergration with Other Apps</h3>
+            <p>The project could be enhanced by allowing a connection with other fitness tracking apps, such as the
+              Apple Health app, to provide more information and build a more comprehensive user experience.
+
+            </p>
+          </div>
+          <div class="column-description">
+            <h3 class="gradient-text-secondary">Social Connectivity</h3>
+            <p>
+              Introducing leaderboards and social features could significantly enhance user engagement and motivation.
+              Similar to the app: Strava,
+              these features could foster a sense of community by allowing users to connect, compete, and join local
+              groups.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</body>
+
+</html>

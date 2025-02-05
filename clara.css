@@ -1,0 +1,200 @@
+/* background styling */
+
+#background {
+    opacity: 0.03;
+}
+
+.darkmode #background {
+    opacity: 0.03;
+}
+
+
+/* hero styling  */
+
+#project-hero {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.projects-title {
+    font-size: 9.6rem;
+    color: transparent;
+}
+
+#projects-contents {
+    display: flex;
+    gap: 2.5rem;
+}
+
+#projects-contents .project-link {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+#projects-contents .project-link.active {
+    background-image: linear-gradient(90deg, var(--primary), rgb(130, 140, 255));
+    color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+.projects-image {
+    display: flex;
+    align-items: end;
+    padding: 5rem;
+    backdrop-filter: blur(2rem);
+    background-image: linear-gradient(163deg,
+            var(--accent-first-60) 0%,
+            var(--accent-third-30) 50%);
+}
+
+.image-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.image-row {
+    display: flex;
+    gap: 3rem;
+    /* width: 100%; */
+}
+
+.image-row img {
+    width: 100%;
+}
+
+.image-tile,
+.info-tile {
+    backdrop-filter: blur(2rem);
+    background: linear-gradient(163deg, var(--accent-first-15), var(--accent-third-19));
+    border-radius: 3rem;
+}
+
+.image-row .image-tile {
+    display: flex;
+    width: 75%;
+}
+
+.info-tile {
+    display: flex;
+    width: 25%;
+}
+
+.info-tile {
+    padding: 3rem;
+}
+
+.info-tile h1 {
+    font-size: 4rem;
+}
+
+.info-tile h2 {
+    font-size: 3rem;
+}
+
+.info-tile h2 span {
+    color: rgb(255, 88, 88);
+}
+
+.image-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(0.4rem);
+
+}
+
+/* 
+.left-tile {
+    border-radius: 3rem 0 0 3rem;
+}
+
+.right-tile {
+    border-radius: 0 3rem 3rem 0;
+} */
+
+
+/* project summary section styling */
+
+#project-summary {
+    padding: 3.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description-container .description-heading {
+    font-size: 4rem;
+}
+
+.column-description {
+    display: flex;
+    font-size: 2rem;
+}
+
+.column-description p {
+    flex: 2;
+}
+
+.column-description h3 {
+    flex: 1;
+    font-size: 2.6rem;
+    color: transparent;
+}
+
+
+.headings-description {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headings-description h3 {
+    color: transparent;
+}
+
+.text-description p {
+    font-size: 2rem;
+}
+
+.description-splitter {
+    display: flex;
+    gap: 3rem;
+}
+
+.description-image .image-tile {
+    padding: 3rem 3rem 0 3rem;
+    display: flex;
+}
+
+.text-description {
+    display: flex;
+}
+
+.text-description h2 {
+    flex: 1;
+}
+
+.text-description .text-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

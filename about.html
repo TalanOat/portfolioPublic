@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Talan Oates - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const darkmode = localStorage.getItem('darkmode');
+      if (darkmode === 'enabled') {
+        document.documentElement.classList.add('darkmode');
+      }
+      else {
+        document.documentElement.classList.add('lightmode');
+      }
+
+    })();
+  </script>
+  <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body>
+  <div id="background"></div>
+  <div id="foreground">
+    <nav class="centred">
+      <a id="nav-logo" href="index.html">
+        <img src="assets/logo.svg" class="lightmode-display" />
+        <img src="assets/logoWhite.svg" class="darkmode-display" />
+      </a>
+
+      <ul id="nav-links">
+        <li class="nav-link">
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="undefined">
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav-link"><a href="about.html">ABOUT</a></li>
+        <li class="nav-link"><a href="#">CV</a></li>
+        <li class="nav-link"><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section id="hero" class="centred">
+      <div id="hero-title">
+        <h1 class="gradient-text-secondary">TALAN OATES</h1>
+        <div class="medium-logo">
+          <img src="assets/logo.svg" class="lightmode-display" />
+          <img src="assets/logoWhite.svg" class="darkmode-display" />
+        </div>
+      </div>
+      <!-- <div id="hero-sub">
+        <h3>Developer, designer, and technology enthusiast. 
+          I hold a degree in Computer Science from the University of East Anglia and have hands-on
+           experience building software within a team environment and collaborating directly with clients.</h3>
+      </div> -->
+    </section>
+    <section id="about-tiles" class="centred">
+      <div class="about-tile cascade-tile active">
+        <div class="top-row" id="about-overview">
+          <h2>Overview</h2>
+          <div class="toggle active"></div>
+        </div>
+        <div class="main-row active">
+          <p>Developer, designer, and technology enthusiast.
+            I hold a degree in Computer Science from the University of East Anglia and have hands-on
+            experience building software within a team environment and collaborating directly with clients.</p>
+        </div>
+      </div>
+      <div class="about-tile cascade-tile">
+        <div class="top-row" id="about-background">
+          <h2>Background</h2>
+          <div class="toggle"></div>
+        </div>
+        <div class="main-row">
+          <p>For over a decade, I've shown a commitment to understanding users and building robust,
+            effective solutions. My journey began in my teenage years, when I started repairing computers for family
+            friends.
+            What began as a hobby quickly grew into an unofficial business, sparking a passion for technology and
+            problem-solving.
+            This early experience taught me the value of crafting solutions that truly meet people’s
+            needs and set me on the path to becoming a developer.</p>
+        </div>
+      </div>
+      <div class="about-tile cascade-tile">
+        <div class="top-row" id="about-values">
+          <h2>Core Values</h2>
+          <div class="toggle"></div>
+        </div>
+        <div class="main-row">
+          <div class="value-container">
+            <h3>Innovative:</h3>
+            <p>I strive to challenge norms, creating solutions that stand out.</p>
+          </div>
+          <div class="value-container">
+            <h3>Robust:</h3>
+            <p>Through quality coding, testing, and efficient design,
+              I build solutions that prioritise usability and performance. Less is often more.</p>
+          </div>
+          <div class="value-container">
+            <h3>User Focused:</h3>
+            <p>Drawing on my background in User Experience Design,
+              I keep end users at the core of development, ensuring accessible and
+              intuitive applications.</p>
+          </div>
+          <div class="value-container">
+            <h3>Scalable:</h3>
+            <p>I design with the future in mind, creating solutions that can grow and
+              adapt over time rather than sacrificing longevity for speed.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-tile cascade-tile">
+        <div class="top-row" id="about-background">
+          <h2>More than just a developer</h2>
+          <div class="toggle"></div>
+        </div>
+        <div class="main-row">
+          <p>I maintain balance through an active lifestyle, from cycling and running to strength training.
+            Cooking is another favourite pastime, I enjoy experimenting in the kitchen as much as creating new projects.
+            These activities fuel my creativity and keep me sharp, enabling me to bring high-quality,
+            inspired work to everything I do.</p>
+        </div>
+      </div>
+      <div class="about-tile cascade-tile">
+        <div class="top-row" id="about-background">
+          <h2>Life Mission</h2>
+          <div class="toggle"></div>
+        </div>
+        <div class="main-row">
+          <p>As I continue to grow both professionally and personally, I am driven by a desire to make a positive
+            impact.
+            My mission is to advocate for those often overlooked in our society, working to create a world where
+            everyone
+            can enjoy the same opportunities and quality of life. I aim not only to advance my technical skills but to
+            contribute to a more inclusive and compassionate world.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <script src="buttons.js"></script>
+</body>
+
+</html>
